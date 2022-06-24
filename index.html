@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,20 +16,56 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="bg-dark-main d-grid">
 
-  Equilibrium #3429
+  <main class="wrapper d-grid" >
 
-  Our Equilibrium collection promotes balance and calm.
+    <!-- card -->
+    <section class="container">
 
-  0.041 ETH
-  3 days left
+      <!-- picture -->
+      <picture class="image d-grid">
+        <div class="d-grid eye-width"><img class="eye" src="./images/icon-view.svg" alt=""></div>
+      </picture>
+
+      <!-- description -->
+      <h1 class="fs-1 active" style="margin-block: 10px; font-weight: 700;">Equilibrium #3429</h1>
+      <p class="fs-2 text-soft">Our Equilibrium collection promotes balance and calm.</p>
+      
+      <!-- price / duration -->
+      <div class="d-flex card-border">
+
+
+        <!-- price -->
+        <div class="d-flex-text">
+          <div class="d-grid fs-2"><img class="eth" src="./images/icon-ethereum.svg" alt=""></div>
+          <p class="fs-2 text-cyan" style="font-weight: 400;">0.041 ETH</p>
+        </div>
+
+
+         <!-- duration -->
+        <div class="d-flex-text">
+          <div class="d-grid fs-2"><img class="eth" src="./images/icon-clock.svg" alt=""></div>
+          <p class="fs-2 text-soft " style="font-weight: 400;">3 days left</p>
+        </div>
+      </div>
+
+      <!-- Profile -->
+      
+      <div class="d-flex-text" style="gap: 1em; margin-top: 15px;">
+        <img class="avatar" src="./images/image-avatar.png" alt="">
+        <p class="fs-3 text-soft"style="font-weight: 300;">Creation of <span class="text-white active">Julues Wyvern</span></p>
+      </div>
+    </section>
+  </main>
+
   
-  Creation of Jules Wyvern
+
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sam Ayebanate</a>.
   </div>
 </body>
 </html>
