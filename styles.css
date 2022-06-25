@@ -175,6 +175,7 @@ body{
 .image:active{
   background-color: hsl(var(--clr-cyan)/.4);
   background-blend-mode: overlay;
+  border-radius: 15px;
 }
 
 .eye{
